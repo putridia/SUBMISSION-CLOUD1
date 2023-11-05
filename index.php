@@ -60,7 +60,7 @@
                             </div>
                         </div>
                         <div class="hero-right">
-                            <img src="assets/images/profil.png" alt="profil">
+                            <img src="https://storage.googleapis.com/submission-cloud1.appspot.com/profil.png" alt="profil">
                         </div>
                     </div>
                 </article>
@@ -70,7 +70,7 @@
             <!-- ABOUT ME -->  
             <aside id="about">
                 <div class="about">
-                    <img src="assets/images/me.png" alt="Foto Profil">
+                    <img src="https://storage.googleapis.com/submission-cloud1.appspot.com/me.png" alt="Foto Profil">
                 </div>
 
                 <div class="data">
@@ -162,7 +162,7 @@
                     <div class="portofolio" data-aos="fade-up-right">
                         <div class="portofolio-cover">
                         <img
-                            src="assets/images/portfolios/portofolio1.png"
+                            src="https://storage.googleapis.com/submission-cloud1.appspot.com/portfolios/portofolio1.png"
                             alt="Portfolio 1"
                         />
                         </div>
@@ -198,7 +198,7 @@
                     <div class="portofolio" data-aos="fade-up-left">
                         <div class="portofolio-cover">
                         <img
-                            src="assets/images/portfolios/portofolio2.png"
+                            src="https://storage.googleapis.com/submission-cloud1.appspot.com/portfolios/portofolio2.png"
                             alt="Portfolio 2"
                         />
                         </div>
