@@ -1,0 +1,295 @@
+@media screen and (max-width: 1000px) {
+    p {
+      font-size: 0.9rem;
+      line-height: 1.8;
+    }
+  
+    .grid-2 {
+      gap: 1rem;
+    }
+  
+    .skills-right ul li {
+      font-size: 0.8rem;
+    }
+
+    .skills-right p{
+      max-width: 100%;
+    }
+
+    .burger-menu {
+        float: right; /* Burger tetap di sebelah kanan */
+        margin-right: 20px; /* Sesuaikan jarak dari kanan */
+        cursor: pointer;
+    }
+
+    .logo {
+        float: left; /* Logo tetap di sebelah kiri */
+        margin-left: 20px; /* Sesuaikan jarak dari kiri */
+    }
+    
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999; /* Z-index yang lebih tinggi untuk memastikan tampil di atas konten lainnya */
+        background-color: #fff; /* Ganti dengan warna latar belakang yang sesuai */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Efek bayangan jika diinginkan */
+    }
+}
+  
+  @media screen and (max-width: 825px) {
+    .main-container {
+        width: 1200px;
+        margin: 0 auto;
+    
+        @media screen and (max-width: 1200px) {
+            width: 90%;
+        }
+    }
+
+    .burger-menu {
+        float: right; /* Burger tetap di sebelah kanan */
+        margin-right: 20px; /* Sesuaikan jarak dari kanan */
+        cursor: pointer;
+    }
+
+    .logo {
+        float: left; /* Logo tetap di sebelah kiri */
+        margin-left: 20px; /* Sesuaikan jarak dari kiri */
+    }
+    
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999; /* Z-index yang lebih tinggi untuk memastikan tampil di atas konten lainnya */
+        background-color: #fff; /* Ganti dengan warna latar belakang yang sesuai */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Efek bayangan jika diinginkan */
+    }
+
+    .burger {
+      display: block;
+      cursor: pointer;
+      background: #fff;
+    }
+  
+    .toggle-burger .line-1 {
+      transform: rotate(-45deg) translate(-5px, 7px);
+    }
+  
+    .toggle-burger .line-2 {
+      opacity: 0;
+    }
+  
+    .toggle-burger .line-3 {
+      transform: rotate(45deg) translate(-5px, -7px);
+    }
+  
+    /* Navigation */
+    nav {
+      position: fixed;
+      width: 50%;
+      right: 0;
+      top: 0;
+      height: 100vh;
+      flex-direction: column;
+      background: #fff;
+      border-left: 1px solid #001524;
+      z-index: 9;
+      transform: translateX(100%);
+      transition: 0.2s ease-in-out;
+    }
+  
+    nav ul {
+      height: 100vh;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .nav-active {
+      transform: translateX(0);
+    }
+    /* End of Navigation */
+  
+    :root {
+      --sectionPadding: 4rem 0;
+    }
+  
+    /* Titles */
+    .section-title {
+      font-size: 1.6rem;
+      margin: 0.6rem 0 2rem;
+    }
+  
+    .pre-title {
+      font-size: 0.8rem;
+    }
+  
+    /* Hero Section */
+    .hero {
+      grid-template-columns: 1fr;
+      height: fit-content;
+    }
+  
+    .hero-right {
+      order: -1;
+      padding-top: 90px;
+    }
+  
+    .hero-right img {
+      width: 70%;
+    }
+  
+    .hero-left {
+      text-align: center;
+      padding-bottom: 6rem;
+    }
+  
+    .hero-left .pre-title {
+      margin: 0 0.6rem;
+    }
+  
+    .hero-name {
+      font-size: 2.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-ac {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    #services {
+        background-color: #F0F0F0;
+        padding: 0.5rem 1rem;
+        margin: 20px 0 0 10px;
+    }
+    .service {
+        padding: 1rem 1rem;
+        text-align: center;
+        background: #001524;
+        width: 80%;
+        border-radius: var(--itemBorderRadius);
+        margin: 10px; /* Tambahkan margin agar ada jarak antara layanan */
+        max-width: 300px; /* Sesuaikan lebar maksimum sesuai kebutuhan */
+        flex: 1; /* Memungkinkan elemen service untuk meratakan dalam container flex */
+    }
+    
+    /* Skills Section */
+    .skills-grid {
+      gap: 1rem;
+    }
+  
+    /* Footer */
+    footer {
+      padding: 2rem 0;
+    }
+  }
+
+/* CSS untuk layar dengan lebar kurang dari 768px (misalnya, ponsel) */
+@media (max-width: 767px) {
+  aside {
+    width: 100%; /* Mengisi seluruh lebar layar pada layar kecil */
+    height: auto; /* Tinggi sesuaikan dengan kontennya */
+    justify-content: center; /* Pusatkan elemen "about" dan "data" */
+    display: flex;
+    margin: 20px 0;
+    flex-direction: column; /* Ubah tata letak menjadi kolom */
+    background-color: #001524;
+    color: #F0F0F0;
+    border: 0.4px solid #445D48;
+    box-shadow: 0 2px 6px 3px #D6CC99;
+  }
+
+  .about,
+  .data {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+  .about img {
+    width: 100%; /* Gambar mengisi seluruh lebar parent */
+    max-width: 570px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  .data h3 {
+    font-size: 30px; /* Perkecil ukuran teks judul */
+    margin: 1px;
+  }
+}
+
+
+/* CSS untuk layar dengan lebar lebih dari 768px (misalnya, tablet dan desktop) */
+@media (min-width: 768px) {
+  aside {
+    position: relative;
+    width: 98%;
+    height: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Menggunakan space-between untuk meletakkan "about-ac" dan "data" di sisi kanan dan kiri */
+    text-align: center;
+    background-color: #001524;
+    color: #F0F0F0;
+    padding: 20px;
+    border: 0.4px solid #445D48;
+    box-shadow: 0 2px 6px 3px #D6CC99;
+    border-radius: 5px;
+    margin: 20px 0 0 10px;
+  }
+  
+  .about {
+    flex: 1; /* Menggunakan flex: 1 agar "about" dapat memanfaatkan ruang yang tersedia */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .about img {
+    width: 100%; /* Menggunakan lebar 100% agar gambar menyesuaikan lebar "about" */
+    max-width: 570px; /* Menambahkan max-width agar gambar tidak terlalu besar */
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .data {
+    flex: 1; /* Menggunakan flex: 1 agar "data" dapat memanfaatkan ruang yang tersedia */
+    padding: 0 10px; /* Menambahkan ruang antara "about-ac" dan "data" */
+    text-align: left; /* Mengatur teks di "data" menjadi kiri */
+  }
+  
+  .data h3 {
+    margin: 100px 10px 50px;
+    color: #D6CC99;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .data h3 span {
+    color: #F0F0F0;
+  }
+  
+  .data p {
+    margin: 0;
+    font-size: 1rem;
+    color: #F0F0F0;
+  }
+}
+  
+  /* Mobile Size */
+  @media screen and (max-width: 640px) {
+    /* Titles */
+    .section-title {
+      font-size: 1.3rem;
+    }
+  
+    .pre-title {
+      font-size: 0.7rem;
+    }
+  }
